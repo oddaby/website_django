@@ -1,0 +1,4 @@
+{
+    "typescript.experimental.tsserver.web.enableProjectWideIntellisense": true,
+    "html-to-css-autocompletion.triggerCharacters": true
+}

@@ -1,0 +1,135 @@
+
+#bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#bgc{
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+}
+
+
+h2,.navbar-nav{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+    font-weight: bold; /* Set the font weight */
+    color:#6a6f8c;
+    font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+h1{
+    color: white;
+}
+
+span{
+    color: red;
+}
+
+/*============codes for the navbar==========*/
+.navbar {
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    color: #fff;
+  }
+
+  /*============codes for the home page==========*/
+  .quot{
+    color: white;
+    margin-top: 150px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .custom-rounded {
+    border-radius: 25px; /* Adjust the value as per your preference */
+  }
+  
+
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+  }
+  .promotion{
+    margin-bottom: 20px;
+  }
+  .product{
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+    font-weight: bold; /* Set the font weight */
+  }
+
+  .about{
+    background-color: black;
+    padding: 25px;
+    margin: 10px;
+  }
+  .about h4{
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+    font-weight: bold; /* Set the font weight */
+    margin-left: 5px;
+  }
+
+  .about p{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+    margin-left: 5px;
+  }
+
+  .services{
+    margin-left: 20px;
+    color: white;
+  }
+
+  .services h4{
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+    font-weight: bold; /* Set the font weight */
+    margin-left: 5px;
+  }
+
+  .service i {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+
+  .management{
+   padding: 25px;
+    margin: 10px;
+  }
+
+  .management h4{
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+    font-weight: bold; /* Set the font weight */
+    margin-left: 5px;
+  }
+
+  .contact{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+  }
+
+  .contact h4,h5{
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+    font-weight: bold; /* Set the font weight */
+    margin-left: 5px;
+  }
+
+  .contact p{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+    font-weight: bold; /* Set the font weight */
+    margin-left: 5px;
+  }
+  
+  
