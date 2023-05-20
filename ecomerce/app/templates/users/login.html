@@ -1,0 +1,44 @@
+{% extends 'users/dashbase.html' %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+{% load widget_tweaks %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">Login</h3>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            <div class="form-group">
+                                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            {% if field.name == 'username' %}
+                                                <i class="fas fa-user"></i>
+                                            {% elif field.name == 'password' %}
+                                                <i class="fas fa-lock"></i>
+                                            {% endif %}
+                                        </span>
+                                    </div>
+                                    {{ field }}
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

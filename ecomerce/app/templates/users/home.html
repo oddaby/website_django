@@ -1,0 +1,344 @@
+{% extends 'users/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+  <section class="quot">
+    <h4><span>"</span>Stay ahead of the competition with our advanced technologies and strategic insights.<span>"</span></h4>
+  </section>
+
+<!---=========codes for buttons=======-->
+  <section>
+    
+    <div class="d-flex justify-content-center m-5">
+      <div class="row">
+        <div class="col-md-6 text-center mt-2">
+          <a href="#" class="btn btn-danger">Login</a>
+        </div>
+        <div class="col-md-6 text-center mt-2">
+          <a href="{% url 'register' %}" class="btn btn-danger">Register</a>
+        </div>
+      </div>
+    </div>
+    
+
+   
+    
+
+
+
+  </section>
+
+
+  <section class="promotion"id="promotion">
+    
+    <div class="container">
+
+      <h4 class="product m-4">Our Products</h4>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-deckcard  bg-dark">
+            <img class="card-img-top" src="{% static 'images/apple1.png' %}" alt="Card image">
+            <div class="card-body mt-5">
+              <h5 class="card-title">Apple Phones</h5>
+              <p class="card-text text-secondary">Available Now</p>
+              <p class="card-text text-primary"><b>@ 185,000</b></p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-deck bg-dark">
+            <img class="card-img-top" src="{% static 'images/apple8.png' %}" alt="Card image">
+            <div class="card-body">
+              <h5 class="card-title">Apple Laptops</h5>
+              <p class="card-text text-secondary">Available Now</p>
+              <p class="card-text text-primary"><b>@ 185,000</b></p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-deck bg-dark">
+            <img class="card-img-top" src="{% static 'images/apple3.png' %}" alt="Card image">
+            <div class="card-body">
+              <h5 class="card-title">Apple Watches</h5>
+              <p class="card-text text-secondary">Available Now</p>
+              <p class="card-text text-primary"><b>@ 185,000</b></p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-deck bg-dark">
+            <img class="card-img-top" src="{% static 'images/apple4.png' %}" alt="Card image">
+            <div class="card-body mt-5">
+              <h5 class="card-title">Home Thetre</h5>
+              <p class="card-text text-secondary">Available Now</p>
+              <p class="card-text text-primary"><b>@ 185,000</b></p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="product m-4">Products On Offer</h4>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-deckcard  bg-dark">
+            <img class="card-img-top" src="{% static 'images/apple5.png' %}" alt="Card image">
+            <div class="card-body mt-5">
+              <h5 class="card-title">Apple Phones</h5>
+              <p class="card-text text-secondary">Available Now</p>
+              <p class="card-text text-primary"><b>@ 185,000</b></p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-deck bg-dark">
+            <img class="card-img-top" src="{% static 'images/apple6.png' %}" alt="Card image">
+            <div class="card-body">
+              <h5 class="card-title">Apple Laptops</h5>
+              <p class="card-text text-secondary">Available Now</p>
+              <p class="card-text text-primary"><b>@ 185,000</b></p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-deck bg-dark">
+            <img class="card-img-top" src="{% static 'images/apple7.png' %}" alt="Card image">
+            <div class="card-body">
+              <h5 class="card-title">Apple Watches</h5>
+              <p class="card-text text-secondary">Available Now</p>
+              <p class="card-text text-primary"><b>@ 185,000</b></p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-deck bg-dark">
+            <img class="card-img-top" src="{% static 'images/apple2.png' %}" alt="Card image">
+            <div class="card-body mt-5">
+              <h5 class="card-title">Home Thetre</h5>
+              <p class="card-text text-secondary">Available Now</p>
+              <p class="card-text text-primary"><b>@ 185,000</b></p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <section class="about row"id="about">
+    <div class="col">
+      <h4>About us</h4>
+      <p>
+        Welcome to our shop, your premier destination for all your electrical device needs.
+        We are a trusted retailer specializing in a wide range of high-quality electrical devices, 
+        offering an extensive selection to cater to your diverse requirements. 
+        Our mission is to provide customers with top-notch products, exceptional service, 
+        and an enjoyable shopping experience.
+
+        Product Range:
+        At our shop, we offer a comprehensive range of electrical devices from renowned brands, 
+        ensuring that you have access to the latest and most reliable technology. From smartphones and tablets to laptops, 
+        televisions, home appliances, and much more, we have 
+        carefully curated our inventory to provide you with a variety of options to meet your individual 
+        preferences and budget.
+      </p><hr class="text-light">
+    </div>
+  </section>
+
+
+  <section class="services row"id="services">
+    <div class="container">
+      <h4>Services</h4>
+
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="card-body">
+            <div class="service ml-4">
+              <i class="material-icons">local_shipping</i>
+              <h5>Free Delivery</h5>
+              <p>We offer free delivery for all orders within the city.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card-body">
+              <div class="service ml-3">
+                <i class="material-icons">local_offer</i>
+                <h5>Discounted Goods</h5>
+                <p>Enjoy special discounts on selected goods.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="service ml-3">
+            <i class="material-icons">headset_mic</i>
+            <h5>Customer Care Desk</h5>
+            <p>Our dedicated customer care team is available to assist you with any inquiries or issues.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="service ml-3">
+            <i class="material-icons">access_time</i>
+            <h5>24-Hour Services</h5>
+            <p>We provide services 24 hours a day, ensuring convenience for our customers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="text-light">
+
+
+
+  <section class="management row bg-dark"id="management">
+    <div class="container">
+      <h4>Management</h4>
+
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="card mb-4">
+            <img src="{% static 'images/team2.png' %}" class="card-img-top rounded-circle w-50"alt="Team Member 1">
+            <div class="card-body">
+              <h5 class="card-title">Jackson Hedi</h5>
+              <p class="card-text text-dark">CEO</p>
+              <p class="card-text text-success">
+                <i class="fas fa-envelope text-primary"></i> oddajackson@gmail.com<br>
+                <i class="fas fa-phone text-primary"></i> +254 757768388
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card mb-4">
+            <img src="{% static 'images/team1.png' %}" class="card-img-top rounded-circle w-50"alt="Team Member 1">
+            <div class="card-body">
+              <h5 class="card-title">Jane Smith</h5>
+              <p class="card-text text-dark">Product Advertizer</p>
+              <p class="card-text text-success">
+                <i class="fas fa-envelope text-primary"></i> janesmith@gmail.com<br>
+                <i class="fas fa-phone text-primary"></i> +254 757768388
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card mb-4">
+            <img src="{% static 'images/team4.png' %}" class="card-img-top rounded-circle w-50"alt="Team Member 1">
+            <div class="card-body">
+              <h5 class="card-title">Maya Johnson</h5>
+              <p class="card-text text-dark">Product Manager</p>
+              <p class="card-text text-success">
+                <i class="fas fa-envelope text-primary"></i> mayajohnson@gmail.com<br>
+                <i class="fas fa-phone text-primary"></i> +254 757768388
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card mb-4">
+            <img src="{% static 'images/team3.png' %}" class="card-img-top rounded-circle w-50"alt="Team Member 1">
+            <div class="card-body">
+              <h5 class="card-title">Edwin Karisa</h5>
+              <p class="card-text text-dark">Market Manager</p>
+              <p class="card-text text-success">
+                <i class="fas fa-envelope text-primary"></i> edwin karisa@gmail.com<br>
+                <i class="fas fa-phone text-primary"></i> +254 757768388
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+ 
+
+
+  <section class="contact row "id="contact">
+    <div class="col">
+      <h4>Contact Us</h4>
+      <div>
+        <div class="mapouter"><div class="gmap_canvas">
+            <iframe class="gmap_iframe" width="100%" 
+              frameborder="0" scrolling="no" marginheight="0" 
+              marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=wema,tanariver county&amp;t=h&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+          
+          </div>
+          <style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style>
+        </div>
+      </div>
+      
+    </div>
+
+    <div id="bgc"  style="background-image: url({% static 'images/contact_bg.jpg' %});">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Address</h5>
+          <p>123 Main Street<br>City, State ZIP</p>
+        </div>
+
+        <div class="col-md-6">
+          <h5>Contact</h5>
+          <p>Email: info@example.com<br>Phone: +1 123 456 7890</p>
+        </div>
+      </div>
+
+      <hr class="text-light">
+  
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Opening Hours</h5>
+          <p>Monday-Friday: 9:00 AM - 5:00 PM<br>Saturday-Sunday: Closed</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Email Address</h5>
+          <p>Oddajackson@gmal.</p>
+        </div>
+
+        
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; Apple Kenya 2023. All rights reserved.</p>
+    </div>
+  </footer>
+  
+ 
+
+{% endblock content %}
+
+
+

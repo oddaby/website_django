@@ -1,0 +1,55 @@
+
+{% extends 'users/head.html' %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+{% load widget_tweaks %}
+
+{% block content %}
+
+<div class="container m-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-light">
+                    <h3 class="text-center text-danger ">Register</h3>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            <div class="form-group">
+                                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            {% if field.name == 'username' %}
+                                                <i class="fas fa-user"></i>
+                                            {% elif field.name == 'email' %}
+                                                <i class="fas fa-envelope"></i>
+                                            {% elif field.name == 'password' or field.name == 'confirm_password' %}
+                                                <i class="fas fa-lock"></i>
+                                            {% endif %}
+                                        </span>
+                                    </div>
+                                    {{ field }}
+                                </div>
+                            </div>
+                            {% if field.errors %}
+                                <div class="alert alert-danger" role="alert">
+                                    {% for error in field.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                        <div class="pt-4 text-center">
+                            <button type="submit" class="btn btn-danger">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
